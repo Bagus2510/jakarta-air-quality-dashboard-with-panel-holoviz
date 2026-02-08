@@ -1,22 +1,22 @@
 # Jakarta Air Quality Dashboard
 
-Dashboard interaktif untuk monitoring kualitas udara Jakarta (ISPU) dari tahun 2010-2025 dengan visualisasi komprehensif dan analisis mendalam.
+An interactive dashboard for monitoring Jakarta's air quality (ISPU - Air Pollution Standard Index) from 2010-2025 with comprehensive visualizations and in-depth analysis.
 
 ![Dashboard Preview](https://img.shields.io/badge/Panel-Dashboard-blue)
 ![Python](https://img.shields.io/badge/Python-3.8+-green)
 
 ## Features
 
-- 📊 **KPI Metrics**: Monitor total pengukuran, rata-rata ISPU, hari berkualitas baik, dan polutan kritis
-- 📈 **Visualisasi Interaktif**: 
-  - Tren ISPU harian
-  - Distribusi kategori kualitas udara
-  - Tren kategori per tahun
-  - Pola musiman dengan heatmap
-  - Perbandingan polutan antar stasiun
-  - Box plot distribusi polutan
-- 🎛️ **Filter Dinamis**: Filter berdasarkan tahun, stasiun, dan kategori kualitas udara
-- 📍 **5 Stasiun Monitoring**:
+- 📊 **KPI Metrics**: Track total measurements, average ISPU, good air quality days, and critical pollutants
+- 📈 **Interactive Visualizations**: 
+  - Daily ISPU trends
+  - Air quality category distribution
+  - Category trends per year
+  - Seasonal patterns with heatmap
+  - Pollutant comparison across stations
+  - Pollutant distribution box plots
+- 🎛️ **Dynamic Filters**: Filter by year, station, and air quality category
+- 📍 **5 Monitoring Stations**:
   - DKI1 (Bunderan HI)
   - DKI2 (Kelapa Gading)
   - DKI3 (Jagakarsa)
@@ -25,16 +25,16 @@ Dashboard interaktif untuk monitoring kualitas udara Jakarta (ISPU) dari tahun 2
 
 ## Tech Stack
 
-- **Panel**: Framework dashboard interaktif
-- **HvPlot**: Visualisasi data high-level
-- **Holoviews**: Library visualisasi declarative
+- **Panel**: Interactive dashboard framework
+- **HvPlot**: High-level data visualization
+- **Holoviews**: Declarative visualization library
 - **Bokeh**: Interactive plotting
 - **Pandas**: Data manipulation
 - **Remix Icon**: Icon library
 
 ## Installation
 
-1. Clone repository:
+1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/jakarta-air-quality-dashboard.git
 cd jakarta-air-quality-dashboard
@@ -52,14 +52,14 @@ Run the dashboard:
 panel serve dashboard.py --show
 ```
 
-Dashboard akan terbuka di browser pada `http://localhost:5006/dashboard`
+The dashboard will open in your browser at `http://localhost:5006/dashboard`
 
 ## Project Structure
 
 ```
 jakarta-air-quality-dashboard/
 ├── dashboard.py          # Main dashboard application
-├── ispu_dki_all.csv     # Dataset kualitas udara
+├── ispu_dki_all.csv     # Air quality dataset
 ├── requirements.txt      # Python dependencies
 ├── README.md            # Documentation
 └── .gitignore           # Git ignore rules
@@ -67,32 +67,32 @@ jakarta-air-quality-dashboard/
 
 ## Data Description
 
-Dataset berisi pengukuran kualitas udara dengan kolom:
-- `tanggal`: Tanggal pengukuran
-- `stasiun`: Nama stasiun monitoring
+The dataset contains air quality measurements with the following columns:
+- `tanggal`: Measurement date
+- `stasiun`: Monitoring station name
 - `pm25`: Particulate Matter 2.5
 - `pm10`: Particulate Matter 10
 - `so2`: Sulfur Dioxide
 - `co`: Carbon Monoxide
 - `o3`: Ozone
 - `no2`: Nitrogen Dioxide
-- `max`: Nilai ISPU maksimum
-- `critical`: Polutan paling kritis
-- `categori`: Kategori kualitas udara (BAIK, SEDANG, TIDAK SEHAT, dll)
+- `max`: Maximum ISPU value
+- `critical`: Most critical pollutant
+- `categori`: Air quality category (GOOD, MODERATE, UNHEALTHY, etc.)
 
-## Screenshots
+## Dashboard Tabs
 
 ### Overview Tab
-Menampilkan ringkasan data, tren ISPU harian, dan distribusi kategori.
+Displays data summary, daily ISPU trends, and category distribution.
 
 ### Analysis Tab
-Analisis mendalam dengan heatmap musiman dan tren bulanan.
+In-depth analysis with seasonal heatmap and monthly trends.
 
 ### Station Tab
-Perbandingan polutan antar stasiun dan distribusi nilai.
+Pollutant comparison across stations and value distribution.
 
 ### Data Tab
-Tabel data detail dengan pagination.
+Detailed data table with pagination.
 
 ## Contributing
 
