@@ -36,8 +36,8 @@ An interactive dashboard for monitoring Jakarta's air quality (ISPU - Air Pollut
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/jakarta-air-quality-dashboard.git
-cd jakarta-air-quality-dashboard
+git clone https://github.com/yourusername/jakarta-air-quality-dashboard-with-panel-holoviz.git
+cd jakarta-air-quality-dashboard-with-panel-holoviz
 ```
 
 2. Install dependencies:
